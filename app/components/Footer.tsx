@@ -19,39 +19,41 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="bg-near-black px-6 pt-20 pb-10 text-cream sm:px-10">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-10 border-b border-cream/10 pb-16 sm:grid-cols-4">
-        {columns.map((col) => (
-          <div key={col.heading}>
-            <p className="mb-3 text-[10px] font-medium tracking-[0.15em] text-cream/50 uppercase">
-              {col.heading}
-            </p>
-            {col.lines.map((line) => (
-              <p key={line} className="text-sm text-cream/80">
-                {line}
-              </p>
-            ))}
-          </div>
-        ))}
-      </div>
+    <footer className="relative overflow-hidden border-t border-espresso/10 bg-cream px-6 py-14 sm:px-10">
+      <div className="mx-auto flex max-w-7xl flex-col gap-10 sm:flex-row sm:items-center">
+        <div className="relative h-28 w-full shrink-0 overflow-hidden sm:h-32 sm:w-48">
+          <div
+            aria-hidden
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "repeating-linear-gradient(90deg, var(--espresso-brown) 0px, var(--espresso-brown) 2px, transparent 2px, transparent 7px)",
+              opacity: 0.12,
+            }}
+          />
+          <h2 className="absolute top-1/2 left-0 origin-left -translate-y-1/2 -rotate-90 bg-gradient-to-r from-espresso to-burnt-orange bg-clip-text font-serif text-8xl leading-none font-light whitespace-nowrap text-transparent sm:text-9xl">
+            LEPORI
+          </h2>
+        </div>
 
-      <div className="mx-auto flex max-w-7xl flex-col items-center pt-10">
-        <div
-          aria-hidden
-          className="mb-4 h-14 w-full max-w-3xl"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(90deg, var(--cream-ivory) 0px, var(--cream-ivory) 2px, transparent 2px, transparent 6px)",
-            maskImage:
-              "linear-gradient(to bottom, black 60%, transparent 100%)",
-          }}
-        />
-        <h2 className="font-serif text-[16vw] leading-none font-light tracking-tight sm:text-[10rem]">
-          LEPORI
-        </h2>
-        <p className="mt-6 text-[10px] tracking-[0.15em] text-cream/40 uppercase">
-          © {new Date().getFullYear()} Lepori Farms. All rights reserved.
-        </p>
+        <div className="grid flex-1 grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-5">
+          {columns.map((col) => (
+            <div key={col.heading}>
+              <p className="mb-3 text-[10px] font-medium tracking-[0.15em] text-espresso/50 uppercase">
+                {col.heading}
+              </p>
+              {col.lines.map((line) => (
+                <p key={line} className="text-sm text-espresso/80">
+                  {line}
+                </p>
+              ))}
+            </div>
+          ))}
+          <p className="col-span-2 text-xs leading-relaxed text-espresso/50 sm:col-span-1">
+            © {new Date().getFullYear()} Lepori Farms. Restorative agriculture,
+            from soil to bowl.
+          </p>
+        </div>
       </div>
     </footer>
   );
