@@ -9,7 +9,7 @@ const highlights = [
 export default function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-espresso/10 bg-cream px-6 pt-28 pb-16 text-espresso sm:px-10 sm:pt-36 sm:pb-24">
-      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-end lg:gap-16">
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
         <div>
           <p className="mb-4 text-[11px] font-medium tracking-[0.2em] text-burnt-orange uppercase">
             The first-ever restorative collection
@@ -39,8 +39,8 @@ export default function Hero() {
           </div>
           <ul className="mt-6 grid grid-cols-1 gap-4 border-t border-espresso/10 pt-6 sm:grid-cols-3">
             {highlights.map(([n, label]) => (
-              <li key={n} className="text-xs text-espresso/70">
-                <span className="mr-2 font-serif text-burnt-orange">{n}</span>
+              <li key={n} className="font-spicy text-sm text-espresso/70">
+                <span className="mr-2 text-burnt-orange">{n}</span>
                 {label}
               </li>
             ))}
