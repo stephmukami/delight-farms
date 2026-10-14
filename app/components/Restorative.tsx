@@ -38,7 +38,7 @@ export default function Restorative() {
           A Closed Loop System.
         </h2>
         <p className="mb-4 max-w-sm text-sm leading-relaxed text-cream/70">
-          Every byproduct of Lepori is input to another life. The hay feeds
+          Every byproduct of Delight Farms is input to another life. The hay feeds
           the rabbits, the soil absorbs the calculus of this rhythmic natural
           symphony.
         </p>

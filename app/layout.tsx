@@ -26,7 +26,7 @@ const spicyRice = Spicy_Rice({
 });
 
 export const metadata: Metadata = {
-  title: "Lepori — Restorative Rabbit Nutrition",
+  title: "Delight Farms",
   description:
     "Ethically raised, regeneratively farmed rabbit provisions — from soil to bowl.",
 };

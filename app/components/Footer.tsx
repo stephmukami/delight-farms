@@ -32,7 +32,7 @@ export default function Footer() {
             }}
           />
           <h2 className="absolute top-1/2 left-0 origin-left -translate-y-1/2 -rotate-90 bg-gradient-to-r from-espresso to-burnt-orange bg-clip-text font-serif text-8xl leading-none font-light whitespace-nowrap text-transparent sm:text-9xl">
-            LEPORI
+            DELIGHT FARMS
           </h2>
         </div>
 
@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
           ))}
           <p className="col-span-2 text-xs leading-relaxed text-espresso/50 sm:col-span-1">
-            © {new Date().getFullYear()} Lepori Farms. Restorative agriculture,
+            © {new Date().getFullYear()} Delight Farms. Restorative agriculture,
             from soil to bowl.
           </p>
         </div>

@@ -37,7 +37,7 @@ export default function Provisions() {
         <div className="mb-14 flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <p className="mb-2 text-[11px] font-medium tracking-[0.2em] text-espresso/60 uppercase">
-              Lepori
+              Delight Farms
             </p>
             <h2 className="font-serif text-5xl font-light text-burnt-orange sm:text-6xl">
               Provisions
