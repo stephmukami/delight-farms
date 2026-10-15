@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "../delight-farms-logo.svg";
 
-const links = ["The Harvest", "The Life", "The Earth", "Contact"];
+const links = ["Live Rabbits", "Rabbit Meat", "Manure", "Contact"];
 
 export default function Navbar() {
   return (

@@ -2,31 +2,31 @@ import Image from "next/image";
 
 const cards = [
   {
-    kicker: "Anatomy of a meal",
-    title: "The Harvest",
-    image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80&auto=format&fit=crop",
-    alt: "Golden wheat field at sunset",
-    copy: "Grown across nutrient-rich pastures, every grain is cultivated without pesticides and harvested by hand.",
-    cta: "View the harvest",
-  },
-  {
-    kicker: "Anatomy of a meal",
-    title: "The Life",
+    kicker: "From our farm",
+    title: "Live Rabbits",
     image:
       "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=900&q=80&auto=format&fit=crop",
     alt: "White rabbit resting in a garden",
-    copy: "Our rabbits roam sustainable open-air pastures, living free and healthy, as nature intended.",
-    cta: "View the life",
+    copy: "Healthy, well-handled rabbits for breeding stock, starter herds or pets. Ask us which breeds and ages are available.",
+    cta: "Enquire about rabbits",
   },
   {
-    kicker: "Anatomy of a meal",
-    title: "The Cycle",
+    kicker: "From our farm",
+    title: "Rabbit Meat",
+    image:
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80&auto=format&fit=crop",
+    alt: "Golden wheat field at sunset",
+    copy: "Lean, high-protein rabbit meat, freshly slaughtered and cleanly dressed. Whole rabbits for homes, hotels and restaurants.",
+    cta: "Order rabbit meat",
+  },
+  {
+    kicker: "From our farm",
+    title: "Rabbit Manure",
     image:
       "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80&auto=format&fit=crop",
     alt: "Dark, nutrient-rich soil",
-    copy: "Nothing goes to waste. Organic matter returns to the earth, feeding the soil for the next harvest.",
-    cta: "View the cycle",
+    copy: "Rabbit manure is one of the richest natural fertilisers. Sold by the bag for farms, kitchen gardens and nurseries.",
+    cta: "Buy manure",
   },
 ];
 
@@ -40,12 +40,12 @@ export default function Provisions() {
               Delight Farms
             </p>
             <h2 className="font-serif text-5xl font-light text-burnt-orange sm:text-6xl">
-              Provisions
+              Our Produce
             </h2>
           </div>
           <p className="max-w-xs text-xs leading-relaxed text-espresso/60 uppercase">
-            Our process is rooted in the principles of regenerative
-            agriculture, from soil to bowl.
+            Three things from one farm: live rabbits, fresh rabbit meat and
+            organic rabbit manure.
           </p>
         </div>
 

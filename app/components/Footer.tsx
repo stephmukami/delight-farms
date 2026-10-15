@@ -1,11 +1,11 @@
 const columns = [
   {
     heading: "Visit us",
-    lines: ["484 Juniper Road", "Highlands, USA"],
+    lines: ["Juja", "Kiambu County, Kenya"],
   },
   {
     heading: "Get in touch",
-    lines: ["hello@lepori.farm", "+27 000 0000"],
+    lines: ["hello@delight.farm", "+254 795 665 995"],
   },
   {
     heading: "Follow",
@@ -50,8 +50,8 @@ export default function Footer() {
             </div>
           ))}
           <p className="col-span-2 text-xs leading-relaxed text-espresso/50 sm:col-span-1">
-            © {new Date().getFullYear()} Delight Farms. Restorative agriculture,
-            from soil to bowl.
+            © {new Date().getFullYear()} Delight Farms. Live rabbits, rabbit
+            meat and manure from Juja, Kenya.
           </p>
         </div>
       </div>

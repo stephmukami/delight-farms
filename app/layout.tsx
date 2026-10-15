@@ -28,7 +28,7 @@ const spicyRice = Spicy_Rice({
 export const metadata: Metadata = {
   title: "Delight Farms",
   description:
-    "Ethically raised, regeneratively farmed rabbit provisions — from soil to bowl.",
+    "A 300-rabbit farm in Juja, Kiambu County, Kenya, selling live rabbits, rabbit meat and rabbit manure.",
 };
 
 export default function RootLayout({
