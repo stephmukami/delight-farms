@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "api.mapbox.com",
+        pathname: "/styles/**",
+      },
     ],
   },
 };

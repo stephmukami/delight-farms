@@ -2,7 +2,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, set up your environment variables:
+
+```bash
+cp .env.example .env.local
+```
+
+Then fill in the values in `.env.local` (see [Environment variables](#environment-variables)).
+
+Next, run the development server:
 
 ```bash
 npm run dev
@@ -19,6 +27,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Environment variables
+
+`.env.local` is gitignored (via `.env*` in `.gitignore`) and must never be committed. `.env.example` is the committed template listing every variable.
+
+| Variable | Required | Used in | Purpose |
+| --- | --- | --- | --- |
+| `NEXT_PUBLIC_MAPBOX_API_KEY` | Optional | [`app/components/Footer.tsx`](app/components/Footer.tsx) | Mapbox public token for the static "Find Us" map (Mapbox Static Images API). If unset, the footer shows the address and a directions link without the map. |
+
+Because it is prefixed with `NEXT_PUBLIC_`, the Mapbox token is inlined into the client bundle at build time and is visible to anyone viewing the site. Use a **public** (`pk.*`) token, and in the Mapbox dashboard restrict it to this site's URLs and to the scopes it needs (styles tiles/static images). Rebuild after changing it. Add the same variable in your hosting provider's environment settings for production deploys.
 
 ## Learn More
 

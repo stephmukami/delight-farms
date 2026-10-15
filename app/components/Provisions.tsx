@@ -13,9 +13,8 @@ const cards = [
   {
     kicker: "From our farm",
     title: "Rabbit Meat",
-    image:
-      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900&q=80&auto=format&fit=crop",
-    alt: "Golden wheat field at sunset",
+    image: "/rabbit-meat.jpg",
+    alt: "Raw rabbit legs on a wooden board with thyme, garlic and pink salt",
     copy: "Lean, high-protein rabbit meat, freshly slaughtered and cleanly dressed. Whole rabbits for homes, hotels and restaurants.",
     cta: "Order rabbit meat",
   },
