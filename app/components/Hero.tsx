@@ -27,10 +27,10 @@ export default function Hero() {
         </div>
 
         <div className="relative">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-sm sm:aspect-[5/6]">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl sm:aspect-[5/6]">
             <Image
-              src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=1200&q=80&auto=format&fit=crop"
-              alt="Golden retriever sitting in a sunlit meadow"
+              src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=1200&q=80&auto=format&fit=crop"
+              alt="White rabbit resting in a garden"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="object-cover"
