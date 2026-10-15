@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "../delight-farms-logo.svg";
 
 // Juja, Kiambu County — update to the farm's exact pin when confirmed.
 const farm = { lat: -1.1018, lng: 37.0144, zoom: 13 };
@@ -68,22 +69,15 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto flex max-w-7xl flex-col gap-10 sm:flex-row sm:items-center">
-        <div className="relative h-28 w-full shrink-0 overflow-hidden sm:h-32 sm:w-48">
-          <div
-            aria-hidden
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(90deg, var(--espresso-brown) 0px, var(--espresso-brown) 2px, transparent 2px, transparent 7px)",
-              opacity: 0.12,
-            }}
-          />
-          <h2 className="absolute top-1/2 left-0 origin-left -translate-y-1/2 -rotate-90 bg-gradient-to-r from-espresso to-burnt-orange bg-clip-text font-serif text-8xl leading-none font-light whitespace-nowrap text-transparent sm:text-9xl">
-            DELIGHT FARMS
-          </h2>
+        <div className="shrink-0 sm:w-56">
+          <Image src={logo} alt="Delight Farms" className="h-20 w-auto" />
+          <p className="mt-4 max-w-56 text-xs leading-relaxed text-espresso/50">
+            © {new Date().getFullYear()} Delight Farms. Live rabbits, rabbit
+            meat and manure from Juja, Kenya.
+          </p>
         </div>
 
-        <div className="grid flex-1 grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-5">
+        <div className="grid flex-1 grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-4">
           {columns.map((col) => (
             <div key={col.heading}>
               <p className="mb-3 text-[10px] font-medium tracking-[0.15em] text-espresso/50 uppercase">
@@ -96,10 +90,6 @@ export default function Footer() {
               ))}
             </div>
           ))}
-          <p className="col-span-2 text-xs leading-relaxed text-espresso/50 sm:col-span-1">
-            © {new Date().getFullYear()} Delight Farms. Live rabbits, rabbit
-            meat and manure from Juja, Kenya.
-          </p>
         </div>
       </div>
     </footer>

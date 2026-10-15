@@ -4,9 +4,9 @@ const cards = [
   {
     kicker: "From our farm",
     title: "Live Rabbits",
-    image:
-      "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=900&q=80&auto=format&fit=crop",
-    alt: "White rabbit resting in a garden",
+    image: "/pexels-rabbits.jpg",
+    alt: "Brown rabbit eating fresh grass beside a wooden fence post",
+    position: "object-[center_25%]",
     copy: "Healthy, well-handled rabbits for breeding stock, starter herds or pets. Ask us which breeds and ages are available.",
     cta: "Enquire about rabbits",
   },
@@ -63,7 +63,7 @@ export default function Provisions() {
                   alt={card.alt}
                   fill
                   sizes="(min-width: 640px) 33vw, 100vw"
-                  className="object-cover"
+                  className={`object-cover ${card.position ?? ""}`}
                 />
               </div>
               <p className="mb-4 text-sm leading-relaxed text-espresso/70">
